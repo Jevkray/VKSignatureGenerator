@@ -1,6 +1,4 @@
-# VKSignatureGenerator
 Embedded signature generator for VKontakte messenger. 
-
 This code is written in C# and consists of two classes: ApiRequestParams and BaseRequest. The ApiRequestParams class extends SortedDictionary<string, string> and is used to store query parameters. It has a constructor that takes a string value and splits it into key-value pairs to populate the dictionary. It also has a GetRequestLength method that returns the total length of the request parameters. The Add method is redefined to calculate the length of the query and add a key-value pair to the dictionary.
 
 The BaseRequest class is an abstract class that provides basic functionality for executing API requests. The static defaultEncoding field is set to UTF-8 encoding and a static ApplicationKey field containing a specific application key. It also has a method field representing the API method being called.
